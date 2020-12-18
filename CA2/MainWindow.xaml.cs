@@ -73,7 +73,7 @@ namespace CA2
             if (BTNfulltime.IsChecked == true)
             {
 
-                employee = new Employee(firstName, sureName, "Full time");
+                employee = new Employee(firstName, sureName, "Full time",TBXhourlyrate.Text,TBXhoursworked.Text,TBXsalary.Text);
                 Full.Add(employee);
                 //calcutlates the salary
                 TBXsalary.Text = Convert.ToString(Convert.ToDouble(TBXhoursworked.Text) * Convert.ToDouble(TBXhourlyrate.Text) * 12);
@@ -83,16 +83,48 @@ namespace CA2
             else
             {
                 //check which radio button is check - part time or full time
-                employee = new Employee(firstName, sureName, "Part time");
+                employee = new Employee(firstName, sureName, "Part time",TBXhourlyrate.Text, TBXhoursworked.Text, TBXsalary.Text);
                 Part.Add(employee);
                 //calculates the monthly pay
                 if (TBXhourlyrate.Text.Length > 0 && TBXhoursworked.Text.Length > 0)
                 {
                     TBXmonthlypay.Text = Convert.ToString(Convert.ToDouble(TBXhoursworked.Text) * Convert.ToDouble(TBXhourlyrate.Text));
+
                 }
             }
             names.Add(employee);
         }
+        private void BTNclear_Click(object sender, RoutedEventArgs e)
+        {
+            //clears the boxes that the user inputs their info into
+            TBXfirstname.Clear();
+            TBXsurename.Clear();
+            TBXhoursworked.Clear();
+            TBXhourlyrate.Clear();
+            TBXmonthlypay.Clear();
+            TBXsalary.Clear();
+        }
+        private void CHCKBXparttime_Checked(object sender, RoutedEventArgs e)
+        {
+            //filters the listbox by the part time employees,it displays only the part time
+            if (CHCKBXparttime.IsChecked == true)
+            {
+                LBXnames.ItemsSource = Part;
+            }
+           
+
+        }
+
+        private void CHCKBXfulltime_Checked(object sender, RoutedEventArgs e)
+        {
+            //filters the listbox by the full time employees,it displays only the full time
+            if (CHCKBXfulltime.IsChecked == true)
+            {
+                LBXnames.ItemsSource = Full;
+            }
+         
+        }
+
 
         private void TBXhoursworked_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -113,13 +145,49 @@ namespace CA2
 
         }
 
+       
 
+        private void LBXnames_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+          
+            Employee selectedEmployee = LBXnames.SelectedItem as Employee;
+            if (selectedEmployee != null)
+            {
+                TBXfirstname.Text = selectedEmployee.FirstName;
+                TBXsurename.Text = selectedEmployee.SureName;
+                TBXhourlyrate.Text = selectedEmployee.HourlyRate;
+                TBXhoursworked.Text = selectedEmployee.HoursWorked;
+                if(selectedEmployee.TypeOfEmployee == "Full Time")
+                {
+                    BTNfulltime.IsChecked = true;
+                    TBXsalary.Text = selectedEmployee.Salary;
+
+                }
+                if (selectedEmployee.TypeOfEmployee == "Part Time")
+                {
+                    BTNparttime.IsChecked = false;
+                    TBXsalary.Clear();
+                }
+
+            }
+
+        }
+
+        private void CHCKBXparttime_Unchecked(object sender, RoutedEventArgs e)
+        {                    
+                LBXnames.ItemsSource = names;
+        }
+
+        private void CHCKBXfulltime_Unchecked(object sender, RoutedEventArgs e)
+        {           
+                LBXnames.ItemsSource = names;       
+        }
     }
-       
 
-       
 
-       
+
+
+
 }
     
 

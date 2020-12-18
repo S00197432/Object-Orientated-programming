@@ -12,17 +12,22 @@ namespace CA2
         public string FirstName { get; set; }
         public string SureName { get; set; }
         public string TypeOfEmployee { get; set; }
-        
+        public string HourlyRate { get; set; }
+        public string HoursWorked { get; set; }
+        public string Salary { get; set; }
+
 
 
         //public string FullTime { get; set; }
-      
-        public Employee(string firstname,string surename, string typeOfEmployee)
+
+        public Employee(string firstname,string surename, string typeOfEmployee,string hourlyRate, string hoursWorked, string salary)
         {
             FirstName = firstname;
             SureName = surename;
             TypeOfEmployee = typeOfEmployee;
-          
+            HourlyRate = hourlyRate;
+            HoursWorked = hoursWorked;
+            Salary = salary;
         }
         public override string ToString()
         {
