@@ -1,0 +1,15 @@
+C:\Users\rory6\Desktop\object orientated programming\CA2\bin\Debug\CA2.exe.config
+C:\Users\rory6\Desktop\object orientated programming\CA2\bin\Debug\CA2.exe
+C:\Users\rory6\Desktop\object orientated programming\CA2\bin\Debug\CA2.pdb
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\CA2.csprojAssemblyReference.cache
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\MainWindow.g.cs
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\App.g.cs
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\CA2_MarkupCompile.cache
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\CA2_MarkupCompile.lref
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\MainWindow.baml
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\CA2.g.resources
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\CA2.Properties.Resources.resources
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\CA2.csproj.GenerateResource.cache
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\CA2.csproj.CoreCompileInputs.cache
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\CA2.exe
+C:\Users\rory6\Desktop\object orientated programming\CA2\obj\Debug\CA2.pdb
