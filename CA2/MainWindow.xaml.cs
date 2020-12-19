@@ -93,6 +93,36 @@ namespace CA2
             }
             names.Add(employee);
         }
+        private void BTNclear_Click(object sender, RoutedEventArgs e)
+        {
+            //clears the boxes that the user inputs their info into
+            TBXfirstname.Clear();
+            TBXsurename.Clear();
+            TBXhoursworked.Clear();
+            TBXhourlyrate.Clear();
+            TBXmonthlypay.Clear();
+            TBXsalary.Clear();
+        }
+        private void CHCKBXparttime_Checked(object sender, RoutedEventArgs e)
+        {
+            //filters the listbox by the part time employees,it displays only the part time
+            if (CHCKBXparttime.IsChecked == true)
+            {
+                LBXnames.ItemsSource = Part;
+            }
+
+        }
+
+        private void CHCKBXfulltime_Checked(object sender, RoutedEventArgs e)
+        {
+            //filters the listbox by the full time employees,it displays only the full time
+            if (CHCKBXfulltime.IsChecked == true)
+            {
+                LBXnames.ItemsSource = Full;
+            }
+
+        }
+
 
         private void TBXhoursworked_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -113,13 +143,27 @@ namespace CA2
 
         }
 
+        private void BTNupdate_Click(object sender, RoutedEventArgs e)
+        {
+            Employee selectedEmployee = LBXnames.SelectedItem as Employee;
+
+            if (selectedEmployee != null)
+            {
+                TBXfirstname.Text = selectedEmployee.FirstName;
+                TBXsurename.Text = selectedEmployee.SureName;
+
+
+            }
+
+
+        }
 
     }
-       
 
-       
 
-       
+
+
+
 }
     
 
