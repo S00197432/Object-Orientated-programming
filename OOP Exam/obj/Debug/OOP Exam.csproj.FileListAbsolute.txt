@@ -1,0 +1,15 @@
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\bin\Debug\OOP Exam.exe.config
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\bin\Debug\OOP Exam.exe
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\bin\Debug\OOP Exam.pdb
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\OOP Exam.csprojAssemblyReference.cache
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\MainWindow.g.cs
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\App.g.cs
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\OOP Exam_MarkupCompile.cache
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\OOP Exam_MarkupCompile.lref
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\MainWindow.baml
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\OOP Exam.g.resources
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\OOP_Exam.Properties.Resources.resources
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\OOP Exam.csproj.GenerateResource.cache
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\OOP Exam.csproj.CoreCompileInputs.cache
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\OOP Exam.exe
+C:\Users\rory6\Desktop\object orientated programming\OOP Exam\obj\Debug\OOP Exam.pdb
